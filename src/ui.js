@@ -156,7 +156,7 @@ ui.body.onmouseup = ui.body.ontouchend = function(e){
   evt.target = null;
   evt.drag = false;
 }
-ui.hostname = window.localStorage.getItem("ext.hostname") || "https://www.bimwook.com";
+ui.hostname = window.localStorage.getItem("ext.hostname") || "https://www.bimwook.com:11180";
 ui.drawitem = function(item, fixed){
   var me = this;
   var data = {rowid: item.rowid||"0", name: item.name||"无题", url: item.url||"about:blank"};
