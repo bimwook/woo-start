@@ -11,7 +11,7 @@ config.save = function(){
 
 config.load = function(){
   var me = this;
-  this.controls.hostname.value = this.local.getItem("ext.hostname")||"https://www.bimwook.com";
+  this.controls.hostname.value = this.local.getItem("ext.hostname")||"https://www.bimwook.com:11180";
   this.controls.save.onclick = function(){
     me.save();
     alert("保存成功");
